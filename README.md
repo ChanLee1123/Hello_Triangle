@@ -1,9 +1,9 @@
-Hello Triangle Vulkan demo
+Hello Triangle Vulkan anti-aliasing demo
 =========================
 
 This is a traditional Hello World style application for graphical Vulkan.
 It renders a RGB shaded equilateral triangle (well, if the resolution is a
-square).
+square) with MSAA on.
 
 The code is quite flat and basic, so I think it's good enough for learning. No
 tutorial or even much comments are provided though (comments do lie anyway
@@ -112,6 +112,7 @@ variables in `HelloTriangle.cpp`.
 | `clearColor` | Background color of the rendering | gray (`{0.1f, 0.1f, 0.1f, 1.0f}`) |
 | `vertexShaderFilename` | The file with the SPIR-V vertex shader program | `triangle.vert.spv` |
 | `fragmentShaderFilename` | The file with the SPIR-V fragment shader program | `triangle.frag.spv` |
+| `sampleCount` | The desired sample count for the frame (as a Vulkan enum) |
 
 <sup>1</sup> I preferred `VK_PRESENT_MODE_IMMEDIATE_KHR` before but it tends to
 make coil whine because of the exteme FPS (which could be unnecessarily
