@@ -1,9 +1,10 @@
-Hello Triangle Vulkan demo
+Hello Triangle Vulkan demo -- vertex binding offset
 =========================
 
 This is a traditional Hello World style application for graphical Vulkan.
 It renders a RGB shaded equilateral triangle (well, if the resolution is a
-square).
+square). And it tries if vertex binding
+offset using `vkCmdBindVertexBuffers()` works.
 
 The code is quite flat and basic, so I think it's good enough for learning. No
 tutorial or even much comments are provided though (comments do lie anyway
